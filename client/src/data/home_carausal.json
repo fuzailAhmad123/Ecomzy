@@ -1,0 +1,19 @@
+{
+  "slidesData": [
+    {
+      "image": "https://www.pexels.com/photo/a-woman-sitting-on-a-chair-showing-her-back-7206227/",
+      "name": "Women Clothing",
+      "discount": "50-90%"
+    },
+    {
+      "image": "https://www.pexels.com/photo/a-black-man-holding-big-chess-pieces-6687576/",
+      "name": "Men Clothing",
+      "discount": "50-70%"
+    },
+    {
+      "image": "https://www.pexels.com/photo/woman-sitting-by-laptop-and-playing-with-virtual-reality-goggles-5207231/",
+      "name": "Electronics Gadgets",
+      "discount": "40-50%"
+    }
+  ]
+}
