@@ -1,27 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from './components/ui/button'
-import { Navbar } from './my-components/common/Navbar'
-import { Route, Routes } from 'react-router-dom'
-import { Home } from './pages/Home'
+import { useState } from "react";
+import "./App.css";
+
+import { Navbar } from "./my-components/common/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Login } from "./pages/Login";
+import { OpenRoute } from "./my-components/common/OpenRoute";
+import { Signup } from "./pages/Signup";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-     <div className='w-screen overflow-x-hidden min-h-screen h-fit ' >
-       <div >
-        <Navbar/>
-       </div>
-       <>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-          </Routes>
-       </>
-     </div>
-  )
+    <div className="w-screen overflow-x-hidden min-h-screen h-fit ">
+      <div>
+        <Navbar />
+      </div>
+      <>
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route
+            path="/login"
+            element={
+              <OpenRoute>
+                <Login />
+              </OpenRoute>
+            }
+          />
+
+          <Route
+            path="/signup"
+            element={
+              <OpenRoute>
+                <Signup />
+              </OpenRoute>
+            }
+          />
+        </Routes>
+      </>
+    </div>
+  );
 }
 
-export default App
+export default App;
